@@ -30,6 +30,11 @@ class GameTest(unittest.TestCase):
         result = game.calculate_result('rock', 'rock')
         self.assertEqual('Tie game', result)
 
+    def test_scissors_ties(self):
+        game = Game()
+        result = game.calculate_result('scissors', 'scissors')
+        self.assertEqual('Tie game', result)
+
 
 if __name__ == '__main__':
     unittest.main()
