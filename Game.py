@@ -13,4 +13,7 @@ class Game:
         if player1 == 'paper' and player2 == 'paper':
             return 'Tie game'
 
+        if player1 == 'rock' and player2 == 'rock':
+            return 'Tie game'
+
         return 'Player two wins'

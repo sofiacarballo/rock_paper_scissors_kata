@@ -12,8 +12,9 @@ class GameTest(unittest.TestCase):
 
     def test_rock_wins_scissors(self):
         game = Game()
-        result = game.calculate_result('rock','scissors')
+        result = game.calculate_result('rock', 'scissors')
         self.assertEqual('Player one wins', result)
+
     def test_scissors_wins_paper(self):
         game = Game()
         result = game.calculate_result('scissors', 'paper')
@@ -22,7 +23,12 @@ class GameTest(unittest.TestCase):
     def test_paper_ties(self):
         game = Game()
         result = game.calculate_result('paper', 'paper')
-        self.assertEqual('Tie game')
+        self.assertEqual('Tie game', result)
+
+    def test_rock_ties(self):
+        game = Game()
+        result = game.calculate_result('rock', 'rock')
+        self.assertEqual('Tie game', result)
 
 
 if __name__ == '__main__':
