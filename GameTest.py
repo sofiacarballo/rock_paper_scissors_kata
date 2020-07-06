@@ -19,5 +19,11 @@ class GameTest(unittest.TestCase):
         result = game.calculate_result('scissors', 'paper')
         self.assertEqual('Player one wins', result)
 
+    def test_paper_ties(self):
+        game = Game()
+        result = game.calculate_result('paper', 'paper')
+        self.assertEqual('Tie game')
+
+
 if __name__ == '__main__':
     unittest.main()

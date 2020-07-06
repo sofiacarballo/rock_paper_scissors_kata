@@ -10,4 +10,7 @@ class Game:
         if player1 == 'scissors' and player2 == 'paper':
             return 'Player one wins'
 
+        if player1 == 'paper' and player2 == 'paper':
+            return 'Tie game'
+
         return 'Player two wins'
