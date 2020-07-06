@@ -14,7 +14,10 @@ class GameTest(unittest.TestCase):
         game = Game()
         result = game.calculate_result('rock','scissors')
         self.assertEqual('Player one wins', result)
-    
+    def test_scissors_wins_paper(self):
+        game = Game()
+        result = game.calculate_result('scissors', 'paper')
+        self.assertEqual('Player one wins', result)
 
 if __name__ == '__main__':
     unittest.main()
