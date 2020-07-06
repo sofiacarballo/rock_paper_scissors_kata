@@ -3,3 +3,8 @@ class Game:
 
         if player1 == 'paper' and player2 == 'rock':
             return 'Player one wins'
+
+        if player1 == 'rock' and player2 == 'scissors':
+            return 'Player one wins'
+
+        return 'Player two wins'
