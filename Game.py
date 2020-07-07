@@ -1,4 +1,4 @@
-class Game():
+class Game:
 
     def calculate_result(self, player1, player2):
 
