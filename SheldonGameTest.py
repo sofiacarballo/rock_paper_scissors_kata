@@ -8,52 +8,52 @@ class SheldonGameTest(unittest.TestCase):
     def test_scissors_wins_paper(self):
         game = SheldonGame()
         result = game.calculate_sheldon_result('scissors', 'paper')
-        self.assertEqual('Scissors cuts Paper', result)
-
-    def test_paper_wins_rock(self):
-        game = SheldonGame()
-        result = game.calculate_sheldon_result('paper', 'rock')
-        self.assertEqual('Paper covers Rock', result)
-
-    def test_rock_wins_lizard(self):
-        game = SheldonGame()
-        result = game.calculate_sheldon_result('rock', 'lizard')
-        self.assertEqual('Rock crushes Lizard', result)
-
-    def test_lizard_wins_spock(self):
-        game = SheldonGame()
-        result = game.calculate_sheldon_result('lizard', 'spock')
-        self.assertEqual('Lizard poisons Spock', result)
-
-    def test_spock_wins_scissors(self):
-        game = SheldonGame()
-        result = game.calculate_sheldon_result('spock', 'scissors')
-        self.assertEqual('Spock smashes Scissors', result)
+        self.assertEqual('Scissors wins', result)
 
     def test_scissors_wins_lizard(self):
         game = SheldonGame()
         result = game.calculate_sheldon_result('scissors', 'lizard')
-        self.assertEqual('Scissors decapitates Lizard', result)
+        self.assertEqual('Scissors wins', result)
 
-    def test_lizard_wins_paper(self):
+    def test_paper_wins_rock(self):
         game = SheldonGame()
-        result = game.calculate_sheldon_result('lizard', 'paper')
-        self.assertEqual('Lizard eats Paper', result)
+        result = game.calculate_sheldon_result('paper', 'rock')
+        self.assertEqual('Paper wins', result)
 
     def test_paper_wins_spock(self):
         game = SheldonGame()
         result = game.calculate_sheldon_result('paper', 'spock')
-        self.assertEqual('Paper disproves Spock', result)
+        self.assertEqual('Paper wins', result)
 
-    def test_spock_wins_rock(self):
+    def test_rock_wins_lizard(self):
         game = SheldonGame()
-        result = game.calculate_sheldon_result('spock', 'rock')
-        self.assertEqual('Spock vaporizes Rock', result)
+        result = game.calculate_sheldon_result('rock', 'lizard')
+        self.assertEqual('Rock wins', result)
 
     def test_rock_wins_scissors(self):
         game = SheldonGame()
         result = game.calculate_sheldon_result('rock', 'scissors')
-        self.assertEqual('Rock crushes Scissors', result)
+        self.assertEqual('Rock wins', result)
+
+    def test_lizard_wins_spock(self):
+        game = SheldonGame()
+        result = game.calculate_sheldon_result('lizard', 'spock')
+        self.assertEqual('Lizard wins', result)
+
+    def test_lizard_wins_paper(self):
+        game = SheldonGame()
+        result = game.calculate_sheldon_result('lizard', 'paper')
+        self.assertEqual('Lizard wins', result)
+
+    def test_spock_wins_scissors(self):
+        game = SheldonGame()
+        result = game.calculate_sheldon_result('spock', 'scissors')
+        self.assertEqual('Spock wins', result)
+
+    def test_spock_wins_rock(self):
+        game = SheldonGame()
+        result = game.calculate_sheldon_result('spock', 'rock')
+        self.assertEqual('Spock wins', result)
 
     def test_paper_ties(self):
         game = SheldonGame()
