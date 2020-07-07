@@ -17,19 +17,7 @@ class SheldonGame:
         if player1 == 'spock' and (player2 == 'scissors' or player2 == 'rock'):
             return 'Spock wins'
 
-        if player1 == 'paper' and player2 == 'paper':
-            return 'Tie game'
-
-        if player1 == 'rock' and player2 == 'rock':
-            return 'Tie game'
-
-        if player1 == 'scissors' and player2 == 'scissors':
-            return 'Tie game'
-
-        if player1 == 'lizard' and player2 == 'lizard':
-            return 'Tie game'
-
-        if player1 == 'spock' and player2 == 'spock':
+        if player1 == player2:
             return 'Tie game'
 
         return 'Player two wins'
