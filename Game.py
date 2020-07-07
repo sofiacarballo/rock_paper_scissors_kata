@@ -2,6 +2,9 @@ class Game:
 
     def calculate_result(self, player1, player2):
 
+        if player1 == player2:
+            return 'Tie game'
+
         if player1 == 'paper' and player2 == 'rock':
             return 'Player one wins'
 
@@ -10,8 +13,5 @@ class Game:
 
         if player1 == 'scissors' and player2 == 'paper':
             return 'Player one wins'
-
-        if player1 == player2:
-            return 'Tie game'
 
         return 'Player two wins'

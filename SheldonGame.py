@@ -2,6 +2,9 @@ class SheldonGame:
 
     def calculate_sheldon_result(self, player1, player2):
 
+        if player1 == player2:
+            return 'Tie game'
+
         if player1 == 'scissors' and (player2 == 'paper' or player2 == 'lizard'):
             return 'Scissors wins'
 
@@ -16,8 +19,5 @@ class SheldonGame:
 
         if player1 == 'spock' and (player2 == 'scissors' or player2 == 'rock'):
             return 'Spock wins'
-
-        if player1 == player2:
-            return 'Tie game'
 
         return 'Player two wins'
