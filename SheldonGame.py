@@ -1,4 +1,5 @@
 class SheldonGame:
+
     def calculate_sheldon_result(self, player1, player2):
 
         if player1 == 'scissors' and player2 == 'paper':
